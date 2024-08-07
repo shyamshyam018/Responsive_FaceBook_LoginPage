@@ -4,69 +4,102 @@
         <title>Facebook.com</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
         <!-- Bootstrap CSS v5.2.1 -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.2.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <style>
-        .bg-body{background-color: #f0f2f5;}
-        .first{padding-left: 33%;}
-        .text-blue{color: #1877f2;font-size: 55px;font-weight: 700;}
-        .text-black{color: #1c1e21;font-size: 27px;line-height: 28px;}
-
-       .second{padding-left: 7%;}
-       .card{box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.2);}
-       .form-control{height: 52px;}
-       ::placeholder{padding-left: 3px;}
-       .pass{color: #1877f2;font-size: 13.5px;}
-       .btn-green{background-color: #42b72a; color: white;padding: 12px 25px;}
-        .btn-green:hover{background-color: #3ca028; color: white;padding: 12px 25px;}
-       .px-btn{padding: 0 22%}
-       .last-text{font-size: 13.5px;width: 26rem;}
-       .last-text span{color:#1c1e21b0 ; font-weight: 700; font-size: 15px;}
-
+        .bg-body {
+            background-color: #f0f2f5;
+            min-height: 100vh;
+        }
+        .text-blue {
+            color: #1877f2;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        .text-black {
+            color: #1c1e21;
+            font-size: 1.125rem;
+            line-height: 1.5;
+        }
+        .card {
+            box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.2);
+        }
+        .form-control {
+            height: 52px;
+        }
+        ::placeholder {
+            padding-left: 0.5rem;
+        }
+        .pass {
+            color: #1877f2;
+            font-size: 0.875rem;
+        }
+        .btn-green {
+            background-color: #42b72a;
+            color: white;
+            padding: 0.75rem 1.5rem;
+        }
+        .btn-green:hover {
+            background-color: #3ca028;
+            color: white;
+        }
+        .last-text {
+            font-size: 0.875rem;
+            width: 100%;
+        }
+        .last-text span {
+            color: #1c1e21b0;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        
+        @media (max-width: 576px) {
+            .text-blue {
+                font-size: 2rem;
+            }
+            .text-black {
+                font-size: 1rem;
+            }
+            .last-text {
+                font-size: 0.75rem;
+            }
+        }
     </style>
     <body>
        <div class="bg-body">
-        <div class="container-fluid" style="margin-top: 15%;">
-            <div class="row">
+        <div class="container-fluid d-flex align-items-center justify-content-center min-vh-100">
+            <div class="row w-100">
                
-                <div class="col">
-                    <br><br><br>
-                    <div class="first">
+                <div class="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
+                    <div class="my-4">
                         <p class="text-blue mb-0">Facebook</p>
-                        <p class="text-black">Facebook helps you connect and share <br>
-                        with people in your life.</p>
+                        <p class="text-black">Facebook helps you connect and share with people in your life.</p>
                     </div>
                 </div>
 
-                <div class="col">
-                    <div class="second">
-                        <div class="card " style="width: 26rem;">
-                            <div class="card-body">
-                                <input type="text" placeholder="Email address or phone number" class="form-control">
-                                <input type="text" placeholder="Password" class="form-control mt-3">
-                                <button class="btn btn-primary fs-5 fw-bold py-2 mt-3 w-100">Log in</button>
-                                <p class="text-center pass mt-3 text-decoration-none"><a href="#">Forgotten password?</a></p>
-                                <hr class="text-muted mt-4">
-                                <div class="px-btn">
-                                <button class="mt-3 btn btn-green fw-bold">Create new account</button>
-                                </div>
-                            </div>
+                <div class="col-12 col-md-6">
+                    <div class="card mx-auto" style="max-width: 400px;">
+                        <div class="card-body">
+                            <input type="text" placeholder="Email address or phone number" class="form-control mb-3">
+                            <input type="password" placeholder="Password" class="form-control mb-3">
+                            <button class="btn btn-primary fs-5 fw-bold py-2 w-100 mb-3">Log in</button>
+                            <p class="text-center pass mb-3"><a href="#">Forgotten password?</a></p>
+                            <hr class="text-muted mb-4">
+                            <button class="btn btn-green fw-bold w-100 mb-3">Create new account</button>
                         </div>
-                        <p class="last-text text-center mt-4"><span>Create a Page</span> for a celebrity, brand or business.</p>
                     </div>
-                    
+                    <p class="last-text text-center mt-4"><span>Create a Page</span> for a celebrity, brand or business.</p>
                 </div>
 
             </div>
         </div>
        </div>
         
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.2.1/js/bootstrap.bundle.min.js"></script>
        <script src="script.js"></script>
     </body>
 </html>
